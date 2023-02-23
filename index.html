@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カウントダウンタイマー</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+</head>
+<body>
+  <!--------header------->
+  <header>
+    <a href="#" class="logo">絶対に<span>諦めさせないネコガミ様</span></a>
+   
+    <div class="sp-menu" id="menu-icon"></div>
+    <ul class="navlist">
+      <li><a href="#home"></a>マイページ</li>
+      <li><a href="#class"></a>クラス</li>
+      <li><a href="#schedule"></a>スケジュール</li>
+      <li><a href="#chat"></a>憩いの場</li>
+      <li><a href="#contact"></a>問い合わせ</li>
+    </ul>
+
+    <div class="h-btn">
+      <a href="#" class="sign-in">サインイン</a>
+      <a href="#" class="sign-out">サインアウト</a>
+    </div>
+  </header>
+
+
+
+  <!------show method------>
+  <div id="daikichi" class="daikichi">
+    <p>汝、今宵の運は極限に<br>至れりにゃ<br>手を抜くことはいにゃ、たまには力を抜いて乗り切るのが良いにゃ<br>常日頃から努力を怠らずにいる自信の身体を省みると良いにゃ<br>汝が傑物である証はすでに有しているにゃーん</p>
+    <span id="close-daikichi">&times;</span>
+  </div>
+
+  <div id="chukichi" class="chukichi">
+    <p>中吉</p>
+    <span id="close-chukichi">&times;</span>
+  </div>
+
+  <div id="kyou" class="kyou">
+    <p>凶</p>
+    <span id="close-kyou">&times;</span>
+  </div>
+
+  <div id="syoukichi" class="syoukichi">
+    <p>小吉</p>
+    <span id="close-syoukichi">&times;</span>
+  </div>
+
+<!-------timer------->
+  <main>
+        <!-----my page section----->
+    <section class="my-page" id="my-page">
+      <div class="my-page-text">
+        <h1>スタート押したらはじまるにゃ！！</h1>
+      </div>
+    </section>
+    <section class="timer">
+      <p id="timer">60:00</p>
+      <button id="btn">Start</button>
+    </section>
+
+    <!----img------->
+    <section class="pic-cat">
+      <img src="imagcat.png" alt="" class="cat-hand">
+    </section>
+  </main>
+
+  <!-------omikuji-------->
+  <main class="omikuji-container">
+
+    <section class="luck">
+      <h1>今日の運勢</h1>
+      <p id="result">?</p>
+    </section>
+    <button class="omikuji" id="omikuji">おみくじを引く</button>
+    <p id="result"></p>
+  </main>
+
+  <h1>タイマーとグラフのサンプル</h1>
+  <p>タイマー: <span id="timer">60</span>分</p>
+  <canvas id="myChart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
